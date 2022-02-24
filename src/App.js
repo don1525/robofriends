@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Card from './Card.js';
-import { robots } from './robots.js';
+import CardList from './CardList.js';
 
 class App extends Component {
   constructor() {
@@ -9,9 +8,7 @@ class App extends Component {
 
   render() {
     return (
-      robots.map(user => {
-        return <Card robot={user}/>
-      })
+      <CardList />
     );
   }
 }
